@@ -22,7 +22,8 @@ def main():
     # create a list
     list_of_float = []
     mark_num = None
-
+    
+    print("This program will calculate the average of all the user’s marks.")
     while mark_num != "-1":
 
         # gets user input
@@ -42,7 +43,7 @@ def main():
         except Exception:
             print("{} is not a valid mark.".format(mark_num))
 
-    # removes the last element
+    # removes -1 from the list
     list_of_float.pop()
 
     # calls function
@@ -50,7 +51,7 @@ def main():
 
     # displays results to user
     print("For the lists of marks: {}".format(list_of_float))
-    print("The average is: {:,.1f}".format(average_mark))
+    print("The average is: {:,.1f}%".format(average_mark))
 
 
 if __name__ == "__main__":
